@@ -1,0 +1,40 @@
+Client:
+ Version:      1.13.0-rc4
+ API version:  1.25
+ Go version:   go1.7.3
+ Git commit:   88862e7
+ Built:        Sat Dec 17 01:34:17 2016
+ OS/Arch:      darwin/amd64
+
+Server:
+ Version:      1.13.0-rc4
+ API version:  1.25 (minimum version 1.12)
+ Go version:   go1.7.3
+ Git commit:   88862e7
+ Built:        Sat Dec 17 01:34:17 2016
+ OS/Arch:      linux/amd64
+ Experimental: true
+=================
+Bare Metal
+=================
+go version go1.7.3 darwin/amd64
+
+real	0m40.016s
+user	3m3.337s
+sys	0m15.434s
+=================
+Docker, no volume
+=================
+go version go1.7.4 linux/amd64
+
+real	1m21.702s
+user	3m21.360s
+sys	4m43.330s
+=================
+Docker, with volume
+=================
+go version go1.7.4 linux/amd64
+
+real	1m54.622s
+user	3m59.870s
+sys	5m4.010s
