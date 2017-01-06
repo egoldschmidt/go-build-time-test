@@ -1,0 +1,42 @@
+ubuntu@go-build-time-test:~/go-build-time-test$ date
+Fri Jan  6 05:16:12 UTC 2017
+ubuntu@go-build-time-test:~/go-build-time-test$ sudo ./run.sh
+Client:
+ Version:      1.12.5
+ API version:  1.24
+ Go version:   go1.6.4
+ Git commit:   7392c3b
+ Built:        Fri Dec 16 02:42:17 2016
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      1.12.5
+ API version:  1.24
+ Go version:   go1.6.4
+ Git commit:   7392c3b
+ Built:        Fri Dec 16 02:42:17 2016
+ OS/Arch:      linux/amd64
+=================
+Bare Metal
+=================
+go version go1.7 linux/amd64
+
+real	2m6.077s
+user	3m40.616s
+sys	  0m14.696s
+=================
+Docker, no volume
+=================
+go version go1.7.4 linux/amd64
+
+real	2m8.283s
+user	3m39.340s
+sys	  0m20.036s
+=================
+Docker, with volume
+=================
+go version go1.7.4 linux/amd64
+
+real	2m9.017s
+user	3m39.868s
+sys	  0m20.176s
